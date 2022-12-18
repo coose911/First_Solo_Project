@@ -19,3 +19,5 @@ def select_all():
         lesson = Lesson(row["name"], row["time"], row["date"], row["id"])
         lessons.append(lesson)
     return lessons
+
+

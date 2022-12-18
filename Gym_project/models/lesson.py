@@ -5,3 +5,4 @@ class Lesson:
         self.time = time
         self.date = date
         self.id = id
+
