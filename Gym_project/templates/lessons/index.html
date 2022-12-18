@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Lessons</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th></th>
+        <th>Time</th>
+        <th></th>
+        <th>Date</th>
+    </tr>
+    {% for lesson in lessons %}
+    <tr>
+        <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name}} </a></td>
+        <td>|</td>
+        <td><a></a> {{lesson.time}} </a></td>
+        <td>|</td>
+        <td><a> {{lesson.date}} </a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -6,3 +6,7 @@ import repositories.member_repository as member_repository
 import repositories.lesson_repository as lesson_repository
 
 gym_blueprint = Blueprint('gym',__name__)
+
+@gym_blueprint.route("/home")
+def home():
+    return render_template("home/index.html")

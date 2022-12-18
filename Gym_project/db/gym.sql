@@ -7,12 +7,15 @@ DROP TABLE lessons;
 CREATE TABLE members (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(255),
-    last_name VARCHAR(255)
+    last_name VARCHAR(255),
+    dob VARCHAR(255)
 );
 
 CREATE TABLE lessons(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255)
+    name VARCHAR(255),
+    time VARCHAR(255),
+    date VARCHAR(255)
 );
 
 CREATE TABLE gyms (
