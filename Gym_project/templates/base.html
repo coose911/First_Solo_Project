@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main_page.css') }}">
+    
 </head>
 <body>
+    <!-- title of gym at top of page -->
+    <h1 class="Main-title">MARVELOUS Gym</h1>
+    <nav>
+        <!-- unordered list of links for home, members, lessons -->
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- block content from index.html -->
     <section class = "content" >
         {% block content%}
         {% endblock%}
