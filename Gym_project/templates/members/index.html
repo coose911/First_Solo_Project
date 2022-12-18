@@ -1,24 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Members</h1>
 
-<table>
-    <tr>
-        <th>First Name</th>
-        <th></th>
-        <th>Last Name</th>
-        <th></th>
-        <th>DOB</th>
-    </tr>
-    {% for member in members %}
-    <tr>
-        <td> {{member.first_name}} </td>
-        <td>|</td>
-        <td> {{member.last_name}} </td>
-        <td>|</td>
-        <td> {{member.dob}} </td>
-    </tr>
-    {% endfor %}
-</table>
+
+<!-- adding a memeber -->
+<div>
+    <h1>Add Member</h1>
+        <form class="form-inline" action="/members" method="post">
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name", id="'first_name">
+        <label for="second_name">Surname</label>
+        <input type="text" name="second_name", id="'second_name">
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob", id="'dob">
+        <input type="submit" value="Add Member">
+        </form>
+</div>
+<!-- adding a member -->
+
+<br><br><br>
+
+<!-- members list -->
+<div>
+    <h1>Members</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th></th>
+            <th>Last Name</th>
+            <th></th>
+            <th>DOB</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td> {{member.first_name}} </td>
+            <td>|</td>
+            <td> {{member.last_name}} </td>
+            <td>|</td>
+            <td> {{member.dob}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<!-- members list -->
 {% endblock %}

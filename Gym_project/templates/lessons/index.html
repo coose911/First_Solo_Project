@@ -1,24 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Lessons</h1>
 
-<table>
-    <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Time</th>
-        <th></th>
-        <th>Date</th>
-    </tr>
-    {% for lesson in lessons %}
-    <tr>
-        <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name}} </a></td>
-        <td>|</td>
-        <td><a></a> {{lesson.time}} </a></td>
-        <td>|</td>
-        <td><a> {{lesson.date}} </a></td>
-    </tr>
-    {% endfor %}
-</table>
+<!-- adding a lesson -->
+<div>
+    <h1>Add Member</h1>
+        <form class="form-inline" action="/members" method="post">
+        <label for="name">Lesson Name</label>
+        <input type="text" name="name", id="name">
+        <label for="time">Time</label>
+        <input type="time" name="time", id="time">
+        <label for="date">Date</label>
+        <input type="date" name="date", id="date">
+        <input type="submit" value="Add Lesson">
+        </form>
+</div>
+<!-- adding a lesson -->
+
+<br><br><br>
+
+<!-- list of lessons -->
+<div>
+    <h1>Lessons</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Time</th>
+            <th></th>
+            <th>Date</th>
+        </tr>
+        {% for lesson in lessons %}
+        <tr>
+            <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name}} </a></td>
+            <td>|</td>
+            <td><a></a> {{lesson.time}} </a></td>
+            <td>|</td>
+            <td><a> {{lesson.date}} </a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}

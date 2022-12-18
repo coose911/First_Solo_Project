@@ -18,6 +18,7 @@ member_2 = Member('tony', 'stark', "29/May/1970")
 member_repository.save(member_2)
 member_3 = Member('natasha', 'romanova', "03/Dec/1984")
 member_repository.save(member_3)
+all_members = [member_1, member_2, member_3]
 
 # lessons
 lesson_1 = Lesson('defence', '1200', '12/03/2022')
