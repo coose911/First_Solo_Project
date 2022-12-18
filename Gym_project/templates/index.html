@@ -1,5 +1,28 @@
 {% extends 'base.html'%}
 {% block content%}
+
 <h2>Book Member Onto Lesson</h2>
+
+<div class="drop-down-boxes">
+
+        <section class="drop-down-boxes">
+            <form action="/members"></form>
+            <select name="member" id="member">
+            <option value="member">Choose a member</option>
+            <option value=""></option>
+            </select>
+            <br>
+            <form action="/lessons"></form>
+            <select name="lesson" id="lesson">
+            <option value="lesson">Choose a lesson</option>
+            <option value=""></option>
+            </select>
+        </section>
+        <br><br>
+        <input type="submit" value="Submit">
+
+<p>Submit to book member onto lesson</p>
+</div>
+
 
 {% endblock%}
