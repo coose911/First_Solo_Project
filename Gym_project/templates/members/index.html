@@ -9,8 +9,8 @@
         <form class="form-inline" action="/members" method="post">
         <label for="first_name">First Name</label>
         <input type="text" name="first_name", id="'first_name">
-        <label for="second_name">Surname</label>
-        <input type="text" name="second_name", id="'second_name">
+        <label for="last_name">Surname</label>
+        <input type="text" name="last_name", id="'last_name">
         <label for="dob">Date Of Birth</label>
         <input type="date" name="dob", id="'dob">
         <input type="submit" value="Add Member">
@@ -37,7 +37,10 @@
             <td>|</td>
             <td> {{member.last_name}} </td>
             <td>|</td>
-            <td> {{member.dob}} </td>
+            <td> {{member.dob}} <a href="/members/{{ member.id }}/update"><input type="button" value="Edit" ></a></td>
+            
+            
+
         </tr>
         {% endfor %}
     </table>
