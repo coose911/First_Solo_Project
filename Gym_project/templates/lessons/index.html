@@ -32,11 +32,11 @@
         </tr>
         {% for lesson in lessons %}
         <tr>
-            <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name}} </a></td>
+            <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name | capitalize}} </a></td>
             <td>|</td>
             <td><a></a> {{lesson.time}} </a></td>
             <td>|</td>
-            <td><a> {{lesson.date}} </a></td>
+            <td><a> {{lesson.date}} </a><a href="/lessons/{{ lesson.id }}/update"><input type="button" value="Edit" ></a></td>
         </tr>
         {% endfor %}
     </table>

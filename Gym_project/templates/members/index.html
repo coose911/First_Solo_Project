@@ -33,9 +33,9 @@
         </tr>
         {% for member in members %}
         <tr>
-            <td> {{member.first_name}} </td>
+            <td> {{member.first_name | capitalize}} </td>
             <td>|</td>
-            <td> {{member.last_name}} </td>
+            <td> {{member.last_name | capitalize}} </td>
             <td>|</td>
             <td> {{member.dob}} <a href="/members/{{ member.id }}/update"><input type="button" value="Edit" ></a></td>
             

@@ -20,4 +20,19 @@ def select_all():
         lessons.append(lesson)
     return lessons
 
+def select(id):
+    lesson = None
+    sql = "SELECT * FROM lessons WHERE id = %s"
+    values = [id]
+    results = run_sql(sql,values)
+
+    if len(results) > 0:
+        result = results[0]
+        lesson = Lesson(result["name"], result["time"], result["date"], result["id"])
+    return lesson
+
+def update(lesson):
+    sql = "UPDATE lessons SET (name, time, date) = (%s,%s,%s) WHERE id = %s"
+    values = [lesson.name, lesson.time, lesson.date, lesson.id]
+    run_sql(sql, values)
 

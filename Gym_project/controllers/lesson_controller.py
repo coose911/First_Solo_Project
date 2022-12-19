@@ -19,3 +19,17 @@ def add_lesson():
     new_lesson = Lesson(new_name, new_time, new_date)
     lesson_repository.save(new_lesson)
     return redirect("/lessons")
+
+@lesson_blueprint.route("/lessons/<int:id>/update", methods = ["GET"])
+def edit(id):
+    lesson = lesson_repository.select(id)
+    return render_template("lessons/update.html", lesson = lesson)
+
+@lesson_blueprint.route("/lessons/<int:id>", methods = {"POST"})
+def update_lesson(id):
+    new_lesson = request.form["name"]
+    new_time = request.form["time"]
+    new_date = request.form["date"]
+    updated_lesson = Lesson(new_lesson, new_time, new_date, int(id))
+    lesson_repository.update(updated_lesson)
+    return redirect("/lessons")
