@@ -22,10 +22,9 @@
         </div>
 </section>
 
-
 <h1 class="lesson-title" >Lessons</h1>
 <section>
-    <table>
+    <table class="table">
         <tr>
                 <th>Name</th>
                 <th></th>
@@ -35,7 +34,7 @@
         </tr>
         {% for lesson in gym_classes %}
         <tr>
-            <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name | capitalize}} </a></td>
+            <td><a> {{lesson.name | capitalize}} </a></td>
             <td>|</td>
             <td><a></a> {{lesson.time}} </a></td>
             <td>|</td>
@@ -47,3 +46,26 @@
 
 
 {% endblock%}
+
+
+
+
+
+<!-- <h1 class="lesson-title" >Lessons</h1>
+<section class="lesson-list">
+{% for lesson in gym_classes %}
+            <div>
+                <a> {{lesson.name | capitalize}} </a>
+            </div>
+            <div>
+                <a> {{lesson.time}} </a>
+            </div>
+            <div>
+                <a> {{lesson.date}} </a>
+            </div>
+            <div>
+                <a href="/lessons/{{ lesson.id }}/update"></a>
+            </div>
+        {% endfor %}
+
+</section> -->

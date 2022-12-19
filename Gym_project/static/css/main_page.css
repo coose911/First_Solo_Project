@@ -4,11 +4,26 @@
     font-size: 60px;
     font-weight: bolder;
     text-decoration: none;
-    color: var(--clr--neon);
-    border: red 0.5em solid;
+    color: #363945;
+    border: #CD212A 0.5em solid;
     padding: 0.25em 1em;
     border-radius: 0.25em;
 
+}
+
+.home-link:hover {
+    background-color: #363945;
+    border-radius: 50px;
+}
+
+.lessons-link:hover {
+    background-color: #363945;
+    border-radius: 50px;
+}
+
+.members-link:hover {
+    background-color: #363945;
+    border-radius: 50px;
 }
 
 nav {
@@ -59,8 +74,71 @@ nav a {
     text-align: center;
     margin-top: 200px;
     margin-bottom: 50px;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #363945;
 }
 
-section table tr th {
-    text-align: center;
+
+.table {
+    margin-left: 70px;
+    border: 20px groove #BC243C;
+    width: 1300px;
+    height: 600px;
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 100px;
+    border-radius: 20px;
+    background-color: #363945;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 200px;
+    height: 200px;
+    background-color: #363945;
+}
+
+footer h4 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 150px;
+    color: white;
 }

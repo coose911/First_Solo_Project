@@ -1,3 +1,17 @@
-.lesson-data {
-    text-align: center;
+.add-a-lesson{
+    padding-top: 70px;
+}
+
+.lesson-header {
+    padding-left: 250px;
+}
+
+.lessons-table {
+    border: 20px groove #BC243C;
+    width: 608px;
+    height: 400px;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 50px;
+    border-radius: 20px;
 }

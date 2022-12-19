@@ -1,0 +1,17 @@
+.add-a-member{
+    padding-top: 70px;
+}
+
+.members-header {
+    padding-left: 330px;
+}
+
+.members-table {
+    border: 20px groove #BC243C;
+    width: 750px;
+    height: 400px;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 50px;
+    border-radius: 20px;
+}
