@@ -1,6 +1,6 @@
 .main-title {
     text-align: center;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 60px;
     font-weight: bolder;
     text-decoration: none;
@@ -42,9 +42,25 @@ nav a {
     margin-left: 20px;
     }
     
-
+/* search boxes are below */
 
 .drop-down-boxes {
-    display: inline-flex;
-    margin-inline-start: 280px;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.drop-down-box {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.lesson-title {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+section table tr th {
+    text-align: center;
 }

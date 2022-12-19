@@ -2,8 +2,10 @@
 
 {% block content %}
 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/lessons_page.css') }}">
+
 <!-- adding a lesson -->
-<div>
+<section class = "add-a-lesson">
     <h1>Add Lesson</h1>
         <form class="form-inline" action="/lessons" method="post">
         <label for="name">Lesson Name</label>
@@ -14,13 +16,13 @@
         <input type="date" name="date", id="date">
         <input type="submit" value="Add Lesson">
         </form>
-</div>
+</section>
 <!-- adding a lesson -->
 
 <br><br><br>
 
 <!-- list of lessons -->
-<div>
+<div class="lesson-data">
     <h1>Lessons</h1>
     <table>
         <tr>

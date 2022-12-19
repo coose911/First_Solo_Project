@@ -13,3 +13,14 @@ def save(gym):
     results = run_sql(sql, values)
     gym.id = results[0]['id']
     return gym
+
+def select_all():
+    lessons = []
+
+    sql = "SELECT * FROM lessons"
+    results = run_sql(sql)
+
+    for row in results:
+        lesson = Lesson(row["name"], row["time"], row["date"], row["id"])
+        lessons.append(lesson)
+    return lessons
