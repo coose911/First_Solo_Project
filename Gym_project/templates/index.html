@@ -2,7 +2,7 @@
 {% block content%}
 
 <section class="drop-down-boxes">
-    <h2>Book Member Onto Class</h2>
+    <h2 class="booking-text">Book Member Onto Class</h2>
         <div class="drop-down-box">
             <form action="/bookings" method = "POST">
                 <select name="member" id="member">
@@ -27,48 +27,23 @@
 
 <h1 class="lesson-title" >Classes</h1>
 <section>
-    <table class="table">
-        <tr>
+    <table class="main-page-table">
                 <th>Name</th>
                 <th></th>
                 <th>Time</th>
                 <th></th>
                 <th>Date</th>
-        </tr>
-        {% for lesson in lessons %}
-        <tr>
+            {% for lesson in lessons %}
+            <tr>
             <td><a> {{lesson.name | capitalize}} </a></td>
             <td>|</td>
-            <td><a></a> {{lesson.time}} </a></td>
+            <td><a> {{lesson.time}} </a></td>
             <td>|</td>
-            <td><a> {{lesson.date}} </a><a href="/lessons/{{ lesson.id }}/update">
-        </tr>
-        {% endfor %}
+            <td><a> {{lesson.date}} </a><a href="/lessons/{{ lesson.id }}/update"></td>
+            </tr>
+            {% endfor %}
     </table>
 </section>
 
 
 {% endblock%}
-
-
-
-
-
-<!-- <h1 class="lesson-title" >Lessons</h1>
-<section class="lesson-list">
-{% for lesson in gym_classes %}
-            <div>
-                <a> {{lesson.name | capitalize}} </a>
-            </div>
-            <div>
-                <a> {{lesson.time}} </a>
-            </div>
-            <div>
-                <a> {{lesson.date}} </a>
-            </div>
-            <div>
-                <a href="/lessons/{{ lesson.id }}/update"></a>
-            </div>
-        {% endfor %}
-
-</section> -->

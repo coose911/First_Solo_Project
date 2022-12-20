@@ -24,13 +24,15 @@
 <!-- list of lessons -->
 <div>
     <h1 class="lesson-header">Classes</h1>
-    <table class="lessons-table">
+    <table class="lesson-table">
         <tr>
             <th>Name</th>
             <th></th>
             <th>Time</th>
             <th></th>
             <th>Date</th>
+            <th></th>
+            <th></th>
         </tr>
         {% for lesson in lessons %}
         <tr>
@@ -39,9 +41,9 @@
             <td><a></a> {{lesson.time}} </a></td>
             <td>|</td>
             <td><a> {{lesson.date}} </a>
-            <a href="/lessons/{{ lesson.id }}/update"><input type="button" value="Edit" ></a>
+            <td><a href="/lessons/{{ lesson.id }}/update"><input type="button" value="Edit" ></a></td>
             <form action="/lessons/{{ lesson.id }}/delete" method="POST">
-            <input class="" type="submit" value="delete" />
+            <td><input class="" type="submit" value="delete" /></td>
         </tr>
         {% endfor %}
     </table>

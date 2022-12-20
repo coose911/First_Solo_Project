@@ -1,17 +1,58 @@
 .add-a-member{
     padding-top: 70px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;
 }
 
 .members-header {
     padding-left: 630px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 40px;
 }
 
 .members-table {
-    border: 20px groove #BC243C;
-    width: 1400px;
-    height: 500px;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
-    padding-left: 50px;
-    border-radius: 20px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.0em;
+    min-width: 1290px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 60px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bolder;
 }
+
+.members-table tr th {
+    background-color: #BC243C;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.members-table th {
+    padding: 12px 15px;
+}
+
+.members-table td {
+    padding: 12px 15px;
+}
+
+.members-table tbody tr {
+    border-bottom: 1px solid #363945;
+}
+
+.members-table tbody tr:nth-of-type(even){
+    background-color: #BCBCBE;
+}
+
+.members-table tbody tr:nth-last-of-type () {
+    background-color: 20px solid  #BC243C;
+}
+
+.members-table tbody tr.active-row {
+    font-weight: bold;
+    color: ;
+}
+
+
