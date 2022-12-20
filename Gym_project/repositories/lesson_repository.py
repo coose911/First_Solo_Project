@@ -2,6 +2,9 @@ from db.run_sql import run_sql
 from models.lesson import Lesson
 from models.member import Member
 
+
+# repository is where you write a function to speak to the database via sql and return your instructions. controller then uses your function.
+
 def save(lesson):
     sql = "INSERT INTO lessons (name, time, date) VALUES (%s,%s,%s) RETURNING id"
     values = [lesson.name, lesson.time, lesson.date]

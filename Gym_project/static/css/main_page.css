@@ -12,17 +12,17 @@
 }
 
 .home-link:hover {
-    background-color: #363945;
+    background-color: #CD212A;
     border-radius: 50px;
 }
 
 .lessons-link:hover {
-    background-color: #363945;
+    background-color: #CD212A;
     border-radius: 50px;
 }
 
 .members-link:hover {
-    background-color: #363945;
+    background-color: #CD212A;
     border-radius: 50px;
 }
 
@@ -33,6 +33,9 @@ nav {
     font-size: 40px;
     display: flex;
     justify-content: space-around;
+    background-color: #363945;
+    border-radius: 20px;
+padding-top: 10px;
     }
 
 nav div  {
@@ -48,6 +51,7 @@ nav ul{
 nav li {
     display: inline-block;
     padding: 5px 5px;
+
     }
     
 nav a {
@@ -55,6 +59,7 @@ nav a {
     padding: 10px 5px;
     font-size: .60em;
     margin-left: 20px;
+    color: white;
     }
     
 /* search boxes are below */

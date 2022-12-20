@@ -7,6 +7,8 @@ from models.lesson import Lesson
 import repositories.member_repository as member_repository
 import repositories.lesson_repository as lesson_repository
 
+# repository is where you write a function to speak to the database via sql and return your instructions. controller then uses your function.
+
 def save(booking):
     sql = "INSERT INTO bookings (member_id, lesson_id) VALUES (%s, %s) RETURNING id"
     values = [booking.member.id, booking.lesson.id]
@@ -15,12 +17,14 @@ def save(booking):
     return booking
 
 def select_all():
-    lessons = []
+    bookings = []
 
-    sql = "SELECT * FROM lessons"
+    sql = "SELECT * FROM bookings"
     results = run_sql(sql)
 
     for row in results:
-        lesson = Lesson(row["name"], row["time"], row["date"], row["id"])
-        lessons.append(lesson)
-    return lessons
+        member = member_repository.select(row['member_id'])
+        lesson = lesson_repository.select(row['lesson_id'])
+        booking = Booking(member, lesson, row['id'])
+        bookings.append(booking)
+    return bookings

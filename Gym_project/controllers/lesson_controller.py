@@ -4,7 +4,10 @@ from models.lesson import Lesson
 import repositories.lesson_repository as lesson_repository
 import repositories.member_repository as member_repositoy
 
-lesson_blueprint = Blueprint('lesson', __name__)
+lesson_blueprint = Blueprint('lessons', __name__)
+
+# controller uses the functions that speaks to the database via sql. when you go to the top home page of the function  
+# function is executed. it then retrives information from the function in repository. 
 
 @lesson_blueprint.route("/lessons")
 def lessons():

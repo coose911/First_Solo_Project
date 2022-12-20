@@ -4,11 +4,11 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/lessons_page.css') }}">
 
-<!-- adding a lesson -->
+<!-- adding a lesson/class -->
 <section class = "add-a-lesson">
-    <h1>Add Lesson</h1>
+    <h1>Add Class</h1>
         <form class="form-inline" action="/lessons" method="post">
-        <label for="name">Lesson Name</label>
+        <label for="name">Classes Name</label>
         <input type="text" name="name", id="name">
         <label for="time">Time</label>
         <input type="time" name="time", id="time">
@@ -23,7 +23,7 @@
 
 <!-- list of lessons -->
 <div>
-    <h1 class="lesson-header">Lessons</h1>
+    <h1 class="lesson-header">Classes</h1>
     <table class="lessons-table">
         <tr>
             <th>Name</th>
