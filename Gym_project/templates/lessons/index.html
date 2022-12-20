@@ -8,13 +8,13 @@
 <section class = "add-a-lesson">
     <h1>Add Class</h1>
         <form class="form-inline" action="/lessons" method="post">
-        <label for="name">Classes Name</label>
-        <input type="text" name="name", id="name">
-        <label for="time">Time</label>
-        <input type="time" name="time", id="time">
-        <label for="date">Date</label>
-        <input type="date" name="date", id="date">
-        <input type="submit" value="Add Lesson">
+            <label for="name">Classes Name</label>
+            <input type="text" name="name", id="name">
+            <label for="time">Time</label>
+            <input type="time" name="time", id="time">
+            <label for="date">Date</label>
+            <input type="date" name="date", id="date">
+            <input type="submit" value="Add Lesson">
         </form>
 </section>
 <!-- adding a lesson -->
@@ -34,7 +34,7 @@
         </tr>
         {% for lesson in lessons %}
         <tr>
-            <td><a href="/lessons/{{ lesson.id }}"> {{lesson.name | capitalize}} </a></td>
+            <td><a> {{lesson.name | capitalize}} </a></td>
             <td>|</td>
             <td><a></a> {{lesson.time}} </a></td>
             <td>|</td>

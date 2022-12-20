@@ -13,12 +13,12 @@
 
         <p> You are updating details for member {{ member.first_name | capitalize }} {{member.last_name | capitalize}} </p>
         <form class="form-inline" action="/members/{{ member.id }}" method="post">
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name", id="'first_name" value= {{member.first_name | capitalize}}>
-        <label for="last_name">Surname</label>
-        <input type="text" name="last_name", id="last_name" value= {{member.last_name | capitalize}}>
-        <label for="dob">Date Of Birth</label>
-        <input type="date" name="dob", id="'dob" value= {{member.dob}}>
-        <input type="submit" value="Update Member">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name", id="'first_name" value= {{member.first_name | capitalize}}>
+            <label for="last_name">Surname</label>
+            <input type="text" name="last_name", id="last_name" value= {{member.last_name | capitalize}}>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob", id="'dob" value= {{member.dob}}>
+            <input type="submit" value="Update Member">
         </form>
 </div>

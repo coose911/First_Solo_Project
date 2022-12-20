@@ -35,6 +35,8 @@ booking_2 = Booking(member_2, lesson_3)
 booking_repository.save(booking_2)
 booking_3 = Booking(member_2, lesson_1)
 booking_repository.save(booking_3)
+booking_4 = Booking(member_3, lesson_3)
+booking_repository.save(booking_4)
 
 
 

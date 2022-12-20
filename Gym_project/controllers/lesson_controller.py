@@ -28,7 +28,7 @@ def edit(id):
     lesson = lesson_repository.select(id)
     return render_template("lessons/update.html", lesson = lesson)
 
-@lesson_blueprint.route("/lessons/<int:id>", methods = {"POST"})
+@lesson_blueprint.route("/lessons/<int:id>", methods = ["POST"])
 def update_lesson(id):
     new_lesson = request.form["name"]
     new_time = request.form["time"]

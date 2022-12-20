@@ -27,10 +27,10 @@ def select_bookings():
 
 @booking_blueprint.route("/bookings",  methods =['POST'])
 def book_lesson():
-    member_id = request.form['member_id']
-    lesson_id = request.form['lesson_id']
+    member_id = request.form['member']
+    lesson_id = request.form['lesson']
     member = member_repository.select(member_id)
     lesson = lesson_repository.select(lesson_id)
     booking = Booking(member, lesson)
     booking_repository.save(booking)
-    return render_template("bookings/index.html")
+    return redirect("/bookings")

@@ -4,9 +4,10 @@
 <section class="drop-down-boxes">
     <h2>Book Member Onto Class</h2>
         <div class="drop-down-box">
-            <form action="/bookings" methods = "POST">
+            <form action="/bookings" method = "POST">
                 <select name="member" id="member">
                     <option value="member">Choose a member</option>
+                    {# replace with 'placeholder' #}
                     {% for member in members %}
                     <option value="{{member.id}}"> {{member.first_name}} </option>
                     {% endfor %}
