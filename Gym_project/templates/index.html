@@ -6,14 +6,14 @@
         <div class="drop-down-box">
             <form action="/bookings" method = "POST">
                 <select name="member" id="member">
-                    <option value="member">Choose a member</option>
-                    {# replace with 'placeholder' #}
+                    <option value="" disabled selected hidden>Select a member</option>
+                    <option value="member"> </option>
                     {% for member in members %}
                     <option value="{{member.id}}"> {{member.first_name}} </option>
                     {% endfor %}
                 </select>
                 <select name="lesson" id="lesson">
-                    <option value="lesson">Choose a lesson</option>
+                    <option value="lesson" disabled selected hidden>Choose a class</option>
                     {% for lesson in lessons %}
                     <option value="{{lesson.id}}"> {{lesson.name}} </option>
                     {% endfor %}

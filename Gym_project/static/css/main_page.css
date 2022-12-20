@@ -26,6 +26,11 @@
     border-radius: 50px;
 }
 
+.bookings-link:hover {
+    background-color: #CD212A;
+    border-radius: 50px;
+}
+
 nav {
     text-align: center;
     margin: 0 2px ;

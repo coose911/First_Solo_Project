@@ -1,12 +1,8 @@
-.add-a-member{
-    padding-top: 70px;
-}
-
-.members-header {
+.bookings-header {
     padding-left: 630px;
 }
 
-.members-table {
+.bookings-table {
     border: 20px groove #BC243C;
     width: 1400px;
     height: 500px;

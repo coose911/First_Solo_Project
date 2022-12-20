@@ -3,13 +3,13 @@
 }
 
 .lesson-header {
-    padding-left: 250px;
+    padding-left: 660px;
 }
 
 .lessons-table {
     border: 20px groove #BC243C;
-    width: 608px;
-    height: 400px;
+    width: 1400px;
+    height: 500px;
     font-size: 20px;
     font-family: 'Varela Round', sans-serif;
     padding-left: 50px;
