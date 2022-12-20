@@ -39,3 +39,8 @@ def update(lesson):
     values = [lesson.name, lesson.time, lesson.date, lesson.id]
     run_sql(sql, values)
 
+def delete(id):
+    sql = "DELETE FROM lessons WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
+

@@ -37,3 +37,8 @@ def update_member(id):
     updated_details = Member(new_name, new_second_name, new_dob, int(id))
     member_repository.update(updated_details)
     return redirect("/members")
+
+@member_blueprint.route("/members/<id>/delete", methods = ["POST"])
+def delete_booking(id):
+    member_repository.delete(id)
+    return redirect("/members")

@@ -38,7 +38,10 @@
             <td>|</td>
             <td> {{member.last_name | capitalize}} </td>
             <td>|</td>
-            <td> {{member.dob}} <a href="/members/{{ member.id }}/update"><input type="button" value="Edit" ></a></td>
+            <td> {{member.dob}} 
+            <a href="/members/{{ member.id }}/update"><input type="button" value="Edit" ></a>
+            <form action="/members/{{ member.id }}/delete" method="POST">
+            <input class="" type="submit" value="delete" />
             
             
 

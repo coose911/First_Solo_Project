@@ -36,3 +36,8 @@ def update_lesson(id):
     updated_lesson = Lesson(new_lesson, new_time, new_date, int(id))
     lesson_repository.update(updated_lesson)
     return redirect("/lessons")
+
+@lesson_blueprint.route("/lessons/<id>/delete", methods = ["POST"])
+def delete_booking(id):
+    lesson_repository.delete(id)
+    return redirect("/lessons")

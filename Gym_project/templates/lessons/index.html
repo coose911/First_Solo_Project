@@ -38,7 +38,10 @@
             <td>|</td>
             <td><a></a> {{lesson.time}} </a></td>
             <td>|</td>
-            <td><a> {{lesson.date}} </a><a href="/lessons/{{ lesson.id }}/update"><input type="button" value="Edit" ></a></td>
+            <td><a> {{lesson.date}} </a>
+            <a href="/lessons/{{ lesson.id }}/update"><input type="button" value="Edit" ></a>
+            <form action="/lessons/{{ lesson.id }}/delete" method="POST">
+            <input class="" type="submit" value="delete" />
         </tr>
         {% endfor %}
     </table>
