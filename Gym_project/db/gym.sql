@@ -1,4 +1,4 @@
-DROP TABLE gyms;
+DROP TABLE bookings;
 DROP TABLE members;
 DROP TABLE lessons;
 
@@ -18,7 +18,7 @@ CREATE TABLE lessons(
     date VARCHAR(255)
 );
 
-CREATE TABLE gyms (
+CREATE TABLE bookings (
     id SERIAL PRIMARY KEY,
     member_id INT REFERENCES members(id) ON DELETE CASCADE,
     lesson_id INT REFERENCES lessons(id) ON DELETE CASCADE

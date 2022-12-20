@@ -1,4 +1,4 @@
-class Gym:
+class Booking:
 
     def __init__(self, member, lesson, id = None):
         self.member = member
