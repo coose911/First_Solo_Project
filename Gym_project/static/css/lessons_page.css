@@ -4,6 +4,15 @@
     font-size: 20px;
 }
 
+.spider-man-hanging {
+    height: 320px;
+    width: 250px;
+    float: right;
+    margin-right: 450px;
+    margin-bottom: -500px;
+    margin-top: -301px;
+}
+
 .lesson-header {
     padding-left: 630px;
     font-family: 'Hanken Grotesk', sans-serif;

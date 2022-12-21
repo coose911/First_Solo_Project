@@ -4,6 +4,15 @@
     font-size: 20px;
 }
 
+.iron-man {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-right: 250px;
+    margin-bottom: -500px;
+    margin-top: -250px;
+}
+
 .members-header {
     padding-left: 630px;
     font-family: 'Hanken Grotesk', sans-serif;
