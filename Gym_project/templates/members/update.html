@@ -1,9 +1,13 @@
-<h1>Update Member</h1>
+<body class="update-members-page">
+    
+
+<h1 class="update-members-heading">Update Member</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/members_page.css') }}">
 
 <div>
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="/members">Back to members</a>
         </li>
     </ul>
 </div>
@@ -11,7 +15,7 @@
 <div>
     
 
-        <p> You are updating details for member {{ member.first_name | capitalize }} {{member.last_name | capitalize}} </p>
+        <p class="update-line"> You are updating details for member -> {{ member.first_name | capitalize }} {{member.last_name | capitalize}} </p>
         <form class="form-inline" action="/members/{{ member.id }}" method="post">
             <label for="first_name">First Name</label>
             <input type="text" name="first_name", id="'first_name" value= {{member.first_name | capitalize}}>
@@ -22,3 +26,6 @@
             <input type="submit" value="Update Member">
         </form>
 </div>
+
+
+</body>

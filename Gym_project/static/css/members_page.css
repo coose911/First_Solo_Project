@@ -10,6 +10,7 @@
     font-size: 40px;
 }
 
+
 .members-table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -66,3 +67,23 @@
     border-radius: 6px;
 }
 
+
+
+
+/* This is for the updating members page below */
+
+.update-members-page {
+    background-color: #BCBCBE;
+}
+
+.update-members-heading {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.update-line {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}

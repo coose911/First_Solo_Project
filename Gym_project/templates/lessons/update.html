@@ -1,17 +1,21 @@
+<body class="update-page">
+    
 
-<h1>Update Lesson</h1>
+<h1 class="update-heading">Update Classes</h1>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/lessons_page.css') }}">
 
 
 <div>
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="/lessons">Back to Classes</a>
         </li>
     </ul>
 </div>
 
 <div>
-        <p> You are updating details for Lesson {{ lesson.name | capitalize}} </p>
+        <p class="update-class-line"> You are updating details for Class  ->  {{ lesson.name | capitalize}} </p>
         <form class="form-inline" action="/lessons/{{ lesson.id }}" method="post">
         <label for="name">Name</label>
         <input type="text" name="name", id="name" value= {{lesson.name}}>
@@ -22,3 +26,5 @@
         <input type="submit" value="Update Lesson">
         </form>
 </div>
+
+</body>
