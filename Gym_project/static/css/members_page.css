@@ -58,10 +58,12 @@
 .delete-button {
     color: black;
     border: 4px solid #BC243C;
+    border-radius: 6px;
 }
 
 .edit-button {
     color: black;
     border: 4px solid green;
+    border-radius: 6px;
 }
 
