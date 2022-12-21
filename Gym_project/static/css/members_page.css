@@ -51,9 +51,6 @@
     background-color: 20px solid  #BC243C;
 }
 
-.members-table tbody tr.active-row {
-    font-weight: bold;
-}
 
 .delete-button {
     color: black;
