@@ -41,9 +41,9 @@
             <td> {{member.last_name | capitalize}} </td>
             <td>|</td>
             <td> {{member.dob}} 
-            <td><a href="/members/{{ member.id }}/update"><input type="button" value="Edit" ></a></td>
+            <td><a href="/members/{{ member.id }}/update"><input class="edit-button" type="button" value="Edit" ></a></td>
             <form action="/members/{{ member.id }}/delete" method="POST">
-            <td><input class="" type="submit" value="delete" /></td>
+            <td><input class="delete-button" type="submit" value="delete" /></td>
         </tr>
         {% endfor %}
     </table>

@@ -27,7 +27,7 @@
             <td>|</td>
             <td><a> {{booking.lesson.date}} </a> 
             <form action="/bookings/{{ booking.id }}/delete" method="POST">
-            <td><input class="" type="submit" value="delete" /></td>
+            <td><input class="button-delete" type="submit" value="delete" /></td>
         </tr>
         {% endfor %}
     </table>

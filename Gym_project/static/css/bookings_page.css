@@ -3,6 +3,10 @@
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 40px;
 }
+.button-delete {
+    color: black;
+    border: 4px solid #BC243C;
+}
 
 .bookings-table {
     border-collapse: collapse;
