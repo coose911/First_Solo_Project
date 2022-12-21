@@ -46,6 +46,6 @@
     background-color: #BCBCBE;
 }
 
-.bookings-table tbody tr:nth-last-of-type () {
+.bookings-table tbody tr:nth-last-of-type {
     background-color: 20px solid  #BC243C;
 }

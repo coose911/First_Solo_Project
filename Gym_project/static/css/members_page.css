@@ -46,13 +46,12 @@
     background-color: #BCBCBE;
 }
 
-.members-table tbody tr:nth-last-of-type () {
+.members-table tbody tr:nth-last-of-type {
     background-color: 20px solid  #BC243C;
 }
 
 .members-table tbody tr.active-row {
     font-weight: bold;
-    color: ;
 }
 
 .delete-button {
