@@ -45,6 +45,7 @@
             <td><a href="/lessons/{{ lesson.id }}/update"><input class="edit-button" type="button" value="Edit" ></a></td>
             <form action="/lessons/{{ lesson.id }}/delete" method="POST">
             <td><input class="delete-button" type="submit" value="delete" /></td>
+            </form>
         </tr>
         {% endfor %}
     </table>
